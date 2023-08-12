@@ -1,0 +1,14 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+MyMonie.API/bin/
+MyMonie.API/obj/
+
+MyMonie.Core/bin/
+MyMonie.Core/obj/
+
+MyMonie.Test/bin/
+MyMonie.Test/obj/
