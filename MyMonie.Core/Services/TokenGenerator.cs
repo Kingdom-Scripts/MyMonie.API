@@ -1,6 +1,5 @@
 using Microsoft.Extensions.Options;
 using MyMonie.Core.Interfaces;
-using MyMonie.Core.Models.App;
 using MyMonie.Core.Models.Auth;
 
 namespace MyMonie.Core.Services;
@@ -16,11 +15,11 @@ public class TokenGenerator : ITokenGenerator
         _cacheService = cacheService ?? throw new ArgumentNullException(nameof(cacheService));
     }
 
-    public AuthData GenerateJwtToken(User user)
-    {
-
-        return new AuthData();
-    }
+    // public AuthData GenerateJwtToken(User user)
+    // {
+    //
+    //     return new AuthData();
+    // }
 
     public void InvalidateToken(string userReference)
     {

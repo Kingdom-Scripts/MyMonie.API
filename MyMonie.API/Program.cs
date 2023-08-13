@@ -1,5 +1,6 @@
 
 using MyMonie.Core.Middlewares;
+using MyMonie.Core.Models.App;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -14,6 +15,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<MyMonieContext>();
 
 var app = builder.Build();
 
