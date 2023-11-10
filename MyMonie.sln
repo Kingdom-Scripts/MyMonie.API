@@ -1,10 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMonie.Test", "MyMonie.Test\MyMonie.Test.csproj", "{415F6DE2-743F-4209-8AFE-43E0F7A48682}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMonie.Core", "MyMonie.Core\MyMonie.Core.csproj", "{2DEE8E2C-DDAC-41FB-9970-BCAE91FA1ABC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMonie.API", "MyMonie.API\MyMonie.API.csproj", "{9E0CC6E6-9868-4B20-8A22-4574C0C6E40B}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMonie.API", "MyMonie.API\MyMonie.API.csproj", "{9E0CC6E6-9868-4B20-8A22-4574C0C6E40B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,17 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{415F6DE2-743F-4209-8AFE-43E0F7A48682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{415F6DE2-743F-4209-8AFE-43E0F7A48682}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{415F6DE2-743F-4209-8AFE-43E0F7A48682}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{415F6DE2-743F-4209-8AFE-43E0F7A48682}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DEE8E2C-DDAC-41FB-9970-BCAE91FA1ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DEE8E2C-DDAC-41FB-9970-BCAE91FA1ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DEE8E2C-DDAC-41FB-9970-BCAE91FA1ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DEE8E2C-DDAC-41FB-9970-BCAE91FA1ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E0CC6E6-9868-4B20-8A22-4574C0C6E40B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E0CC6E6-9868-4B20-8A22-4574C0C6E40B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E0CC6E6-9868-4B20-8A22-4574C0C6E40B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E0CC6E6-9868-4B20-8A22-4574C0C6E40B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

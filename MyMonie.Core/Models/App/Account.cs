@@ -23,7 +23,7 @@ namespace MyMonie.Core.Models.App
         public string Name { get; set; } = null!;
         [Column(TypeName = "money")]
         public decimal Balance { get; set; }
-        public bool RecordAsExpense { get; set; }
+        public bool RecordTransferAsExpense { get; set; }
         [StringLength(2000)]
         [Unicode(false)]
         public string? Description { get; set; }

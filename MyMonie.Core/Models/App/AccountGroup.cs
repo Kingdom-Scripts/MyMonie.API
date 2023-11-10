@@ -19,9 +19,11 @@ namespace MyMonie.Core.Models.App
         [StringLength(50)]
         [Unicode(false)]
         public string Name { get; set; } = null!;
+        [StringLength(10)]
+        [Unicode(false)]
+        public string Type { get; set; } = null!;
         public int UserId { get; set; }
-        [Column(TypeName = "money")]
-        public decimal Balance { get; set; }
+        public bool IsPermanent { get; set; }
         public DateTime DateCreated { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DateDeleted { get; set; }

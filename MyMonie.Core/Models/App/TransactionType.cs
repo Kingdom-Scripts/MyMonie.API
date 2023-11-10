@@ -18,6 +18,7 @@ namespace MyMonie.Core.Models.App
 
         [Key]
         public short Id { get; set; }
+
         [StringLength(8)]
         [Unicode(false)]
         public string Name { get; set; } = null!;

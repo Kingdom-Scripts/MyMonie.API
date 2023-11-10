@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
+//using System.Data.Entity;
 
 namespace MyMonie.Core.Models.App
 {
@@ -39,10 +40,10 @@ namespace MyMonie.Core.Models.App
         public virtual DbSet<UserGroup> UserGroups { get; set; } = null!;
         public virtual DbSet<UserSetting> UserSettings { get; set; } = null!;
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("MyMonie"));
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("Server=plesk6700.is.cc;database=MyMonie_Dev;user id=MyMonie;password=$P@assword#Integrated Security=false,MultipleActiveResultSets=True");
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -66,6 +67,8 @@ namespace MyMonie.Core.Models.App
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__AccountGr__UserI__153B1FDF");
+
+                entity.Property(e => e.Type).IsFixedLength();
             });
 
             modelBuilder.Entity<Budget>(entity =>
